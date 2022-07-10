@@ -4,12 +4,23 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
+import { useState } from 'react';
+
+
 
 function App() {
-  return (
+
+const [darkMode,setDarkMode] = useState(false)
+
+function turnOnDarkMode () {
+  setDarkMode(!darkMode)
+  //console.log(darkMode)
+}
+
+ return (
     <Router>
-      <div className="App">
-        <Navbar />
+      <div className={darkMode? "App-dark" : "App"}>
+        <Navbar darktest={turnOnDarkMode}/>
         <div className="content">
           <Switch>
             <Route exact path="/">

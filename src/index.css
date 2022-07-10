@@ -113,32 +113,7 @@
     
   }
 
-  /* 
-  
-  height: 8px;
-  width: 15px;
-  font-size:xx-small;
-  #ec8106
-  
-background: #ec8106;
 
-color: #fff;
-
-
-#root{
-
-  background-color:#111111;
-  color: #681b86;
-  margin: 0;
-  font-family: "Quicksand";
-  color: rgb(194, 193, 193);
-
+.App-dark{
+  background-color: #6f6a6a;
 }
-
-.app{
-  background-color:#111111;
-}
-
-
-
-*/

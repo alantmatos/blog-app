@@ -2,20 +2,20 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 
-const Navbar = () => {
+const Navbar = ({darktest}) => {
 
     const [darkMode,SetDarkMode] = useState(true);
 
     const handleClick = () => {
         SetDarkMode(!darkMode)
-        console.log(darkMode)
+        //console.log(darkMode)
+        darktest()
     }
-
 
     return (
         <nav className="navbar">
             <h1>The Json Blog  </h1>
-            <button onClick={handleClick} className='btn'>{ darkMode ? '🔆' : '🌜'}</button>
+            <button onClick={handleClick}  className='btn'>{ darkMode ? '🔆' : '🌜'}</button>
             <div className="links"> 
                 <Link to='/'> Home</Link>
                 <Link to='/create' style={{
