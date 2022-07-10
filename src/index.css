@@ -4,7 +4,7 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: #A27B5C
 }
 .navbar {
   padding: 20px;
@@ -12,7 +12,7 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #ec8106;
 }
 .navbar h1 {
   color: #ec8106;
@@ -115,5 +115,5 @@
 
 
 .App-dark{
-  background-color: #6f6a6a;
+  background-color: #2C3639;
 }

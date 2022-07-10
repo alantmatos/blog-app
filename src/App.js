@@ -5,17 +5,26 @@ import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
 import { useState } from 'react';
+import BlogEdit from './BlogEdit';
 
 
 
 function App() {
 
 const [darkMode,setDarkMode] = useState(false)
+const [blogId, setBlogId] = useState("")
 
 function turnOnDarkMode () {
   setDarkMode(!darkMode)
   //console.log(darkMode)
 }
+
+const handleEdit = (e) => {
+  setBlogId(e)
+  console.log(blogId)
+}
+
+
 
  return (
     <Router>
@@ -24,13 +33,16 @@ function turnOnDarkMode () {
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Home handleEdit={handleEdit}/>
             </Route>
             <Route path="/create">
               <Create />
             </Route>
             <Route path="/blogs/:id">
               <BlogDetails />
+            </Route>
+            <Route path="/edit">
+              <BlogEdit blogId={blogId}/>
             </Route>
             <Route path={'*'}>
               <NotFound />

@@ -1,5 +1,6 @@
 import { useHistory, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
+import { Link } from 'react-router-dom'
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -14,9 +15,8 @@ const BlogDetails = () => {
       .then(() => {
         history.push('/')
       })
-
-
   }
+
 
 
   return (
@@ -28,7 +28,8 @@ const BlogDetails = () => {
           <h2>{ blog.title }</h2>
           <p>Written by { blog.author }</p>
           <div>{ blog.body }</div>
-          <button onClick={handleDelete}>Delete</button>
+          <button onClick={handleDelete}>Delete</button> <br></br> <br></br>
+          
         </article>
       )}
     </div>

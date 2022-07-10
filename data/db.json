@@ -23,6 +23,42 @@
       "body": "...quack!",
       "author": "Json",
       "id": 5
+    },
+    {
+      "title": "PikaaChu",
+      "body": "game is too good bro",
+      "author": "Pikachu",
+      "id": 6,
+      "updatedBlog": {
+        "id": 6,
+        "author": "Pikachu",
+        "body": "gamenpot a game lalala",
+        "title": "Pokemonaaaa"
+      }
+    },
+    {
+      "title": "Scientist - Todd Kashdan",
+      "body": "“When we are open to new possibilities, we find them. Be open and skeptical\nof everything.”",
+      "author": "Todd Kashdan",
+      "id": 7
+    },
+    {
+      "title": "Unknown",
+      "body": "“Let your unique awesomeness and positive energy inspire confidence in others.”",
+      "author": "Anonymous",
+      "id": 8
+    },
+    {
+      "title": "Speed Skater",
+      "body": "“Winning doesn’t always mean being first. Winning means you’re doing better than you’ve\ndone before.”",
+      "author": "Bonnie Blair ",
+      "id": 9
+    },
+    {
+      "title": " Writer",
+      "body": "“The struggle you’re in today is developing the strength you\nneed tomorrow.”",
+      "author": "Robert Tew ",
+      "id": 10
     }
   ]
 }
