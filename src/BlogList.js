@@ -19,7 +19,7 @@ const BlogList = ({ blogs, handleEdit }) => {
         <div className="blog-preview" key={blog.id} >
           <Link to={`/blogs/${blog.id}`}>
             <h2>{ blog.title }</h2>
-            <p>Written by { blog.author }</p> <br></br>
+            <p>Written by { blog.author.name }</p> <br></br>
             <Link to='/edit' style={{
                     backgroundColor: '#ec8106',
                     color: '#fff',

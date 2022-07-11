@@ -31,7 +31,7 @@ const BlogEdit = ({blogId}) => {
           .then(()=> { }) 
           //history.push(`/blogs/${id}`)
           setIsPending(false)
-          history.push('/')        
+          history.push(`blogs/${id}`)        
     }
 
 
