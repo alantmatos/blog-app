@@ -15,7 +15,7 @@ const Navbar = ({darktest}) => {
     return (
         <nav className="navbar">
             <h1> The Json Blog  </h1>
-            <button onClick={handleClick}  className='btn'>{ darkMode ? '🔆' : '🌜'}</button>
+            <button onClick={handleClick}  className='btn'>{ darkMode ? '🌜' : '🔆'}</button>
             <div className="links"> 
                 <Link to='/'> Home</Link>
                 <Link to='/create' style={{
